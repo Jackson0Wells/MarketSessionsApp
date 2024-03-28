@@ -72,6 +72,8 @@ If you prefer not to use the terminal to build the app, you can build it using P
 
 ### Showcase
 
+
+https://github.com/Jackson0Wells/MarketSessionsApp/assets/165251968/42751ba9-a52f-49d9-91c8-dc86ca14b34c
 https://www.youtube.com/watch?v=5B19-6fUQoE
 
 ## Support Development
