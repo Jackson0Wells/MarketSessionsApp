@@ -48,7 +48,7 @@ If you prefer not to use the terminal to build the app, you can build it using P
    - **Step 2:** From the context menu that appears, select "Open PowerShell window here" or "Open command window here," depending on your system.
    - **Step 3:** In the PowerShell or command window, run the following command to build the Market Sessions App without opening a terminal/console window:
      ```sh
-     pyinstaller --onefile --noconsole Market_sessions.py
+     pyinstaller --onefile --add-data "Images;Images" your_script.py
      ```
 
      - **--onefile:** This flag tells PyInstaller to bundle the Python script and its dependencies into a single executable file.
