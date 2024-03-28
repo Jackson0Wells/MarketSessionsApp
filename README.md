@@ -51,8 +51,9 @@ If you prefer not to use the terminal to build the app, you can build it using P
      pyinstaller --onefile --noconsole --add-data "Images;Images" market_sessions.py
      ```
 
-     - **--onefile:** This flag tells PyInstaller to bundle the Python script and its dependencies into a single executable file.
-     - **--noconsole:** This flag ensures that the built executable does not open a terminal/console window when launched.
+     - **--onefile:** This option directs PyInstaller to bundle your application, along with all its dependencies, into a single executable file. This is particularly useful for ease of distribution, as it encapsulates everything your application needs to run into one file, eliminating the need for external dependencies to be installed on the target system.
+     - **--noconsole:** The --noconsole option is used to suppress the command line console window that typically appears when running a Python application. This is especially relevant for GUI applications where a console window running in the background is unnecessary and potentially confusing for end-users. When this option is included, launching the executable will directly open the application's interface without showing a terminal or command prompt window.
+     - **--add-data:** This option allows you to include additional files in the packaged executable that are not automatically detected by PyInstaller. This is crucial for including external resources your application might rely on, such as image files, configuration files, or databases. The syntax requires specifying the source of the files relative to the project directory, followed by the target directory within the executable, separated by a semicolon (;) on Windows or a colon (:) on macOS and Linux. This ensures that your application maintains access to these essential resources when running in its compiled form.
 
    This command will bundle the Python script and its dependencies into a standalone executable file without opening a terminal window when the app is launched.
 
