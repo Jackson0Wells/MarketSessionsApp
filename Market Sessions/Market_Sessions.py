@@ -211,27 +211,13 @@ def load_settings():
             'image_height': 576,  # Default image height
         }
 
-    # Update the displayed image size based on loaded settings
-    global image_size
-    image_size = (settings['image_width'], settings['image_height'])
-
-
-def save_settings():
-    settings['image_width'] = int(width_entry.get())
-    settings['image_height'] = int(height_entry.get())
-    settings['transparency'] = root.attributes('-alpha')  # Get current transparency value
-    settings['hide_panel_setting'] = settings['hide_panel_setting']  # Update hide_panel_setting
-    with open("settings.json", 'w') as file:
-        json.dump(settings, file)
-
-    # Update the displayed image size
-    global image_size, image
-    image_size = (settings['image_width'], settings['image_height'])
-
-    # Apply changes to the currently displayed image
-    if image_visible:
-        resize_image(image, settings['image_width'], settings['image_height'])
-
+def update_image_size():
+    new_width = int(width_entry.get())
+    new_height = int(height_entry.get())
+    if 'image' in globals():  # Check if the 'image' variable is defined
+        resize_image(image, new_width, new_height)
+    else:
+        print("Image is not visible. Cannot update size.")
 
 # Initialize global variables for image functionality
 image_window = None
@@ -363,7 +349,7 @@ if __name__ == "__main__":
     increase_size_button.grid(row=2, column=2, padx=(0, 10))
 
     # Place the "Save" button
-    save_button = tk.Button(settings_frame, text="Update Image Size", command=save_settings, bg="#666666", fg="#FFFFFF")
+    save_button = tk.Button(settings_frame, text="Update Image Size", command=update_image_size, bg="#666666", fg="#FFFFFF")
     save_button.grid(row=3, column=1, pady=(10, 0), sticky='W')
 
     # Place the "Toggle Image" button next to the "Save" button
