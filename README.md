@@ -68,3 +68,12 @@ If you prefer not to use the terminal to build the app, you can build it using P
 ### Showcase
 
 https://www.youtube.com/watch?v=5B19-6fUQoE
+
+## Support Development
+
+If you find this project useful and would like to support further development, you can donate Bitcoin to the following address:
+
+Bitcoin Address: `17Uv9ZgoKFXdi18PNf5UighASk53KMjzxp`
+
+Your contributions will be greatly appreciated and will help in maintaining and improving this project. Thank you for your support!
+
