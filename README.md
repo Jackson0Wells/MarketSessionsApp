@@ -1,6 +1,11 @@
-### Market Sessions App
+![windows-4jObbWz5vfI-unsplash](https://github.com/Jackson0Wells/MarketSessionsApp/assets/165251968/4bda2b57-b157-475c-80a7-4e49bdb96ced)### Market Sessions App
 
 This application, **Market_sessions.py**, is a Python script that utilizes the Tkinter library to create a graphical user interface (GUI) for displaying information about different market sessions in the financial markets.
+
+![image3](https://github.com/Jackson0Wells/MarketSessionsApp/assets/165251968/2891b806-0b0e-4f4e-8b76-594588f1e439)
+![image2](https://github.com/Jackson0Wells/MarketSessionsApp/assets/165251968/caadb44d-0401-4c61-919d-3e13b7016cd8)
+![image1](https://github.com/Jackson0Wells/MarketSessionsApp/assets/165251968/b80b0012-dda2-48f2-a2d1-5a2158178da5)
+
 
 ### Installation Guide
 
