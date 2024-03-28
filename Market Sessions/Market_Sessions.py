@@ -59,8 +59,6 @@ def resize_image(image, new_width, new_height):
         image_label.image = photo_image  # Keep a reference
         image_window.geometry(f"{new_width}x{new_height}")
 
-SA_TIME_ZONE_OFFSET = timedelta(hours=2)
-
 market_sessions = {
     'Sydney': {'start': 21, 'end': 6, 'description': 'Sydney Session | Accumulation'},  # 9 PM - 6 AM UTC
     'Tokyo': {'start': 0, 'end': 9, 'description': 'Tokyo Session | Accumulation'},     # 12 AM - 9 AM UTC
