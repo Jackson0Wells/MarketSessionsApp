@@ -65,4 +65,6 @@ If you prefer not to use the terminal to build the app, you can build it using P
 
 - Remember to distribute the executable file along with any required assets (such as image files) when sharing or deploying the Market Sessions App.
 
+### Showcase
+
 https://www.youtube.com/watch?v=5B19-6fUQoE
